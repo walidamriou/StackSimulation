@@ -46,7 +46,7 @@ public class Main {
                     if(objectcreat==1) {
                         isVide = a.pileVide();
                         System.out.println(isVide);
-                        if (isVide==true){
+                        if (isVide){
                             System.out.println("La pile est vide.\n");
                         }
                         else {
