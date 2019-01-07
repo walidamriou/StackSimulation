@@ -4,25 +4,19 @@ public class pile {
     private int Sommet=0;
     private int[] element;
 
-    pile(){
-
-    }
+    pile(){} //just to declare object in the main before the menu
 
     //initialisation de la pile
     public pile(int max){
         element = new int[max];
-        //Sommet = max;
-
     }
 
     //La pile est-elle vide?
-
     public boolean pileVide(){
-        return (Sommet == 0); //if i==0 so the list is vide and return true if is vode
+        return (Sommet == 0); //if Sommet==0 so the list is vide and return true if is vide
     }
 
     //Insertion dans la pile
-
     public void empiler(int v){
         if (Sommet+1 == element.length){
             erreur("Le pile est in max. Essayez de le vider d'abord.\n\n");
@@ -38,11 +32,9 @@ public class pile {
                     " .\n");
             Sommet++;
         }
-
     }
 
     //Retrait de la pile
-
     public int depiler(){
         int depiler_var=0;
         if (Sommet == 0) {
@@ -75,7 +67,6 @@ public class pile {
             System.out.println("la pile ete decharge avec succes.\n" +
                     "La pile est vide.\n");
         }
-
     }
 
     public void ListPile(){
@@ -92,14 +83,10 @@ public class pile {
                         i2 +
                         " . \n");
         }
-
-
         }
-
     }
 
     private void erreur(String mes){
         System.out.println(mes);
     }
-
 }
